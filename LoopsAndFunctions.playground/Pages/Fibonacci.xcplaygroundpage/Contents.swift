@@ -5,7 +5,22 @@
  
  */
 
+func fibonacci(n: Int) -> Int {
+    if n < 1 { return 0 }
+    
+    var lastValue = 1
+    var lastLastValue = 0
+    var result = 0
+    
+    for i in 1..<n {
+        result = lastValue + lastLastValue
+        lastLastValue = lastValue
+        lastValue = result
+    }
+    return result
+}
 
+fibonacci(n: 6)
 
 /*:
  ## Bonus: Recursive Fibonacci
@@ -21,6 +36,14 @@
  >   - It may be helpful to look at the mathematical formula for the nth number in the sequence, which is `F(n) = F(n-1) + F(n-2)`.
  */
 
+func recursiveFibonacci(n: Int) -> Int {
+    if n <= 0 { return 0 }
+    if n <= 1 { return 1 }
+    
+    return fibonacci(n: n-1) + fibonacci(n: n-2)
+}
+
+recursiveFibonacci(n: 7)
 
 /*:
  ## Bonus 2: Fibonacci App
