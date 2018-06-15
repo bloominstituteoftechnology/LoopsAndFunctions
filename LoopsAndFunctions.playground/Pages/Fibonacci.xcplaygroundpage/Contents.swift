@@ -5,6 +5,23 @@
  
  */
 
+func fibonacci(_ n: Int) -> Int {
+    if n < 1 { return 0 }
+
+    var prev = 1
+    var prevPrev = 0
+    var output = 0
+
+    for _ in 1..<n {
+        output = prev + prevPrev
+        prevPrev = prev
+        prev = output
+    }
+
+    return output
+}
+
+fibonacci(7)
 
 
 /*:
@@ -21,6 +38,12 @@
  >   - It may be helpful to look at the mathematical formula for the nth number in the sequence, which is `F(n) = F(n-1) + F(n-2)`.
  */
 
+func recursiveFib(_ n: Int) -> Int {
+    if n < 2 { return n }
+    return recursiveFib(n - 1) + recursiveFib(n - 2)
+}
+
+recursiveFib(6)
 
 /*:
  ## Bonus 2: Fibonacci App

@@ -5,10 +5,55 @@
  
  */
 
+//func printPrimes(upTo n: Int) {
+//    for i in 2...n {
+//        var isPrime = true
+//        for j in 2..<i {
+//            if i % j == 0 {
+//                isPrime = false
+//            }
+//        }
+//        if isPrime {
+//            print(i)
+//        }
+//    }
+//}
+//
+//printPrimes(upTo: 30)
+
 /*
  Rewrite the above function so that it's two functions. One called `printPrimes(upTo n: Int)` and the other called `isPrime(_ x: Int) -> Bool`. `isPrime()` should return true if the passed in number is prime, false otherwise. `printPrimes()` should do the same thing as before, but should call `isPrime()` to check if each number is prime.
  */
 
 
+func isPrime(_ n: Int) -> Bool {
+    if n < 2 {
+        return false
+    }
+
+    for i in 2..<n {
+        if n % i == 0 {
+            return false
+        }
+    }
+    return true
+}
+
+isPrime(13)
+
+
+func printPrimes(upTo n: Int) -> Array<Int> {
+    var output = [Int]()
+
+    for i in 2...n {
+        if isPrime(i) {
+            output.append(i)
+        }
+    }
+
+    return output
+}
+
+printPrimes(upTo: 42)
 
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: Fibonacci](@next)

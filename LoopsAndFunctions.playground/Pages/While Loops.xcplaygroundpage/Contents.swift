@@ -6,5 +6,17 @@ import Foundation
  */
 
 
+func rollTheDice() -> Int {
+    return Int(arc4random_uniform(6) + 1)
+}
+
+var diceRoll = rollTheDice()
+
+while diceRoll != 1 {
+    print(diceRoll)
+    diceRoll = rollTheDice()
+}
+
+print(diceRoll)
 
 //: [Previous](@previous)  |  page 2 of 6  |  [Next: Functions](@next)
