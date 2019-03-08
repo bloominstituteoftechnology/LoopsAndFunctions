@@ -12,4 +12,4 @@ import Foundation
 
 
 
-//: [Previous](@previous)  |  page 3 of 6  |  [Next: Return Values](@next)
+//: [Previous](@previous)  |  page 3 of 3

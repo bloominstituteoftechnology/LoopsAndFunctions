@@ -4,8 +4,5 @@
         <page name='For Loops'/>
         <page name='While Loops'/>
         <page name='Functions'/>
-        <page name='Return Values'/>
-        <page name='Prime Numbers'/>
-        <page name='Fibonacci'/>
     </pages>
 </playground>

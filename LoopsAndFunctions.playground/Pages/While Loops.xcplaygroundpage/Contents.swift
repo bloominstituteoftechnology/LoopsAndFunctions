@@ -7,4 +7,4 @@ import Foundation
 
 
 
-//: [Previous](@previous)  |  page 2 of 6  |  [Next: Functions](@next)
+//: [Previous](@previous)  |  page 2 of 3  |  [Next: Functions](@next)
