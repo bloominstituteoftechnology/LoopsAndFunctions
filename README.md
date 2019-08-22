@@ -4,7 +4,6 @@ This project will help you practice the skills and concepts you learned related 
 
 ### Non-Mac Users:
 
-
 This assignment is broken up into smaller repl.it pages. Please go to and complete all of the assignments at the links below:
 
 1. https://repl.it/student/submissions/7592256
